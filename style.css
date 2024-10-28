@@ -3,17 +3,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*overflow: hidden;*/
 }
 
 body {
   background: linear-gradient(90deg, rgba(65,178,255,1) 0%, rgba(33,219,172,1) 50%);
-  height: 100vh;
+  height: 90vh;
+  overflow: hidden;
 }
 
 h1 {
   color:#fff;
   text-align: center;
+  font-size: 25px;
 }
 
 .h1 {
@@ -39,36 +40,49 @@ form {
 }
 
 #importe{
+  width: 150px;
   margin:3px 1px;  
   padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 25px;
+  border-radius: 10px;
+  font-size: 20px;
   font-weight: bold;
+  border: none;
 }
 
 textarea {
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+  margin-left: 50px;
   line-height: 1.3em;
   border-radius: 6px;
   resize: none;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: 700;
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.2);
-  padding: 15px;
+  padding: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   color: #fff;
-  font-weight: bold;
+  border: none;
 }
 
 #fechaDesde {
-  text-align: center;
+  width: 180px;
+  margin:2px;  
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
   font-weight: bold;
+  border: none;
 }
 
 #fechaHasta {
-  text-align: center;
+  width: 180px;
+  margin:2px;  
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
   font-weight: bold;
+  border: none;
 }
 
 .informacion {
@@ -105,7 +119,7 @@ textarea {
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding-top: 1px;
   color: #fff;
 }
 
@@ -121,9 +135,7 @@ footer {
   align-items: center;
   align-content: center;
   text-align: center;
-  padding: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 5px;
 }
 
 .separador-fechas {
@@ -136,7 +148,7 @@ footer {
   align-items: center;
   align-content: center;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -175,32 +187,30 @@ footer {
     align-items: center;
     align-content: center;
     text-align: center;
-    margin-left: 50% auto;
-    margin-right: 50% auto;
 }
 
 /* CARD */
 
 .e-card {
-  margin: 2% auto;
+  margin: 1% auto;
   background: transparent;
   box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
   position: relative;
-  width: 45rem;
-  height: 50rem;
+  width: 40rem;
+  height: 43rem;
   border-radius: 16px;
   overflow: hidden;
 }
 
 .wave {
   position: absolute;
-  width: 1000px;
-  height: 1000px;
+  width: 900px;
+  height: 800px;
   opacity: 0.6;
   left: 0;
   top: 0;
   margin-left: -20%;
-  margin-top: -80%;
+  margin-top: -85%;
   background: linear-gradient(744deg,#4063ff,#5b42f3 60%,#0023eb);
 }
 
@@ -388,9 +398,9 @@ footer {
 .servicio-group {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  width: 320px;
-  border-radius: 12px;
+  gap: 10px;
+  width: 260px;
+  border-radius: 10px;
   background: rgba(0, 0, 0, 0.2);
   padding: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
@@ -400,8 +410,8 @@ footer {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   transition:
     background-color 0.3s ease,
@@ -412,6 +422,7 @@ footer {
   user-select: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   color: #fff;
+  width: 230px;
 }
 .servicio-container:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -476,12 +487,12 @@ footer {
 /* BOTON CALCULAR */
 
 .cssbuttons-io {
-  margin-top: 10px;
+  margin-top: 5px;
   position: relative;
   font-family: inherit;
   font-weight: 700;
-  font-size: 20px;
-  border-radius: 0.8em;
+  font-size: 18px;
+  border-radius: 10px;
   cursor: pointer;
   border: none;
   background: linear-gradient(to right, #21dbac, #41b2ff);
