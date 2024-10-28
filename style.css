@@ -8,6 +8,7 @@
 body {
   background: linear-gradient(90deg, rgba(65,178,255,1) 0%, rgba(33,219,172,1) 50%);
   height: 90vh;
+  /*overflow: hidden;*/
 }
 
 h1 {
@@ -101,24 +102,179 @@ textarea {
 }
 
 .iva {
-  width: 500;
+  font-size: 20px;
   text-align: center;
-  margin: auto;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 0px;
 }
 
-.sin-iva {
-  width: 500;
-  text-align: center;
-  margin: auto;
+
+/*BOTON DE COPIAR 1*/
+
+.copy1 {
+  /* button */
+  --button-bg: #154360;
+  --button-hover-bg: #154360d6;
+  --button-text-color: #ffffff;
+  --button-hover-text-color: #41b2ff;
+  --button-border-radius: 10px;
+  --button-diameter: 0px;
+  --button-outline-width: 0px;
+  --button-outline-color: rgb(141, 141, 141);
   margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 13px;
 }
+
+.copy1 {
+  box-sizing: border-box;
+  width: var(--button-diameter);
+  height: var(--button-diameter);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  outline: none;
+  
+}
+
+.copy1 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkmark {
+  display: none;
+}
+
+/* ACCIONES */
+
+.copy1:hover .tooltip,
+.copy1:focus:not(:focus-visible) .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: calc((100% + var(--tooltip-offset)) * -1);
+}
+
+.copy1:focus:not(:focus-visible) .tooltip::before {
+  content: attr(data-text-end);
+}
+
+.copy1:focus:not(:focus-visible) .clipboard {
+  display: none;
+}
+
+.copy1:focus:not(:focus-visible) .checkmark {
+  display: block;
+}
+
+.copy1:hover,
+.copy1:focus {
+  background-color: var(--button-hover-bg);
+}
+
+.copy1:active {
+  outline: var(--button-outline-width) solid var(--button-outline-color);
+}
+
+.copy1:hover svg {
+  color: var(--button-hover-text-color);
+}
+
+
+
+
+
+
+
+/*BOTON DE COPIAR 2*/
+
+.copy2 {
+  /* button */
+  --button-bg: #154360;
+  --button-hover-bg: #154360d6;
+  --button-text-color: #ffffff;
+  --button-hover-text-color: #41b2ff;
+  --button-border-radius: 10px;
+  --button-diameter: 0px;
+  --button-outline-width: 0px;
+  --button-outline-color: rgb(141, 141, 141);
+  margin-left: 17px;
+  margin-top: 13px;
+
+}
+
+.copy2 {
+  box-sizing: border-box;
+  width: var(--button-diameter);
+  height: var(--button-diameter);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  outline: none;
+  
+}
+
+
+.copy2 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkmark {
+  display: none;
+}
+
+/* ACCIONES */
+
+.copy2:hover .tooltip,
+.copy2:focus:not(:focus-visible) .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: calc((100% + var(--tooltip-offset)) * -1);
+}
+
+.copy2:focus:not(:focus-visible) .tooltip::before {
+  content: attr(data-text-end);
+}
+
+.copy2:focus:not(:focus-visible) .clipboard {
+  display: none;
+}
+
+.copy2:focus:not(:focus-visible) .checkmark {
+  display: block;
+}
+
+.copy2:hover,
+.copy2:focus {
+  background-color: var(--button-hover-bg);
+}
+
+.copy2:active {
+  outline: var(--button-outline-width) solid var(--button-outline-color);
+}
+
+.copy2:hover svg {
+  color: var(--button-hover-text-color);
+}
+
+
+
+
+
+
 
 footer {
   text-align: center;
-  padding-top: 1px;
+  padding-top: 10px;
   color: #fff;
 }
 
@@ -273,8 +429,8 @@ footer {
 
 .copy {
   /* button */
-  --button-bg: #353434;
-  --button-hover-bg: #464646;
+  --button-bg: #154360;
+  --button-hover-bg: #154360d6;
   --button-text-color: #cccccc;
   --button-hover-text-color: #41b2ff;
   --button-border-radius: 10px;
